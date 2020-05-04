@@ -1,7 +1,79 @@
 
-// * date
-var dateVar = new Date();
-document.getElementById("dateID").innerHTML = dateVar;
+// *  ----------------------- date ----------------------------------- //
+
+// var dateVar = new Date();
+// document.getElementById("dateID").innerHTML = dateVar;
+
+// today's date
+        // * month 
+        var month = new Date();
+        document.getElementById("monthID").innerHTML = month.getMonth() + 1 + '/';
+        // // * day
+        var day = new Date();
+        document.getElementById("dayID").innerHTML = day.getDate() + "/"
+        // * year 
+        var year = new Date();
+        document.getElementById("yearID").innerHTML = year.getFullYear();
+
+        /*
+// today's date + 1 (forecast)
+        // * month 
+        var month = new Date();
+        document.getElementById("monthID").innerHTML = month.getMonth() + 1 + '/';
+        // // * day
+        var dayOne = new Date();
+        document.getElementById("dayIDOne").innerHTML = dayOne.getDate() + 1 + "/"
+        // * year 
+        var year = new Date();
+        document.getElementById("yearID").innerHTML = year.getFullYear();
+
+// today's date + 2 (forecast)
+        // * month 
+        var month = new Date();
+        document.getElementById("monthID").innerHTML = month.getMonth() + 1 + '/';
+        // // * day
+        var dayTwo = new Date();
+        document.getElementById("dayIDTwo").innerHTML = dayTwo.getDate() + 2 + "/"
+        // * year 
+        var year = new Date();
+        document.getElementById("yearID").innerHTML = year.getFullYear();
+
+// today's date + 3 (forecast)
+        // * month 
+        var month = new Date();
+        document.getElementById("monthID").innerHTML = month.getMonth() + 1 + '/';
+        // // * day
+        var dayThree = new Date();
+        document.getElementById("dayIDThree").innerHTML = dayThree.getDate() + 3 + "/"
+        // * year 
+        var year = new Date();
+        document.getElementById("yearID").innerHTML = year.getFullYear();
+
+// today's date + 4 (forecast)
+        // * month 
+        var month = new Date();
+        document.getElementById("monthID").innerHTML = month.getMonth() + 1 + '/';
+        // // * day
+        var dayFour = new Date();
+        document.getElementById("dayIDFour").innerHTML = dayFour.getDate() + 4 + "/"
+        // * year 
+        var year = new Date();
+        document.getElementById("yearID").innerHTML = year.getFullYear();
+
+// today's date + 5 (forecast)
+        // * month 
+        var month = new Date();
+        document.getElementById("monthID").innerHTML = month.getMonth() + 1 + '/';
+        // // * day
+        var dayFive = new Date();
+        document.getElementById("dayIDFive").innerHTML = dayFive.getDate() + 5 + "/"
+        // * year 
+        var year = new Date();
+        document.getElementById("yearID").innerHTML = year.getFullYear();
+
+        */
+
+// *  ----------------------- weather ----------------------------------- //
 
 // * variables
 var button = document.querySelector('.button');
@@ -30,11 +102,11 @@ button.addEventListener('click', function(){
             // var uvIndexValue = data.weather[0].main;   
             //HTML ID associating to the JSON values
             nameH.innerHTML = nameValue;
-            tempH.innerHTML = tempValue;
+            tempH.innerHTML = tempValue + "°F";
             descH.innerHTML = descValue;
             iconH.setAttribute("src", iconValue);
-            humidityH.innerHTML = humidityValue;
-            windH.innerHTML = windValue;
+            humidityH.innerHTML = humidityValue + "%";
+            windH.innerHTML = windValue + " miles per hour";
             // uvIndexH.innerHTML = uvIndexValue;
     })
     .catch(err => alert("Incorrect city name, please try again.  Or only provide the city, not state."))

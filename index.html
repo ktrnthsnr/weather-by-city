@@ -11,45 +11,118 @@
 <body>
 
   <!-- bootstrap navbar  -->
-  <nav class="navbar navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1">Weather by City</span>
+  <nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Weather by City</a>
+    <!-- today's date  -->
+      <h4>
+        <ul>
+          <li><p id="monthID"></p></li>
+          <li><p id="dayID"></p> </li>
+          <li><p id="yearID"></p></li>
+        </ul>
+      </h4>
   </nav>
 
-
+   
 <!-- bootstrap container fluid  -->
 <div class="container-fluid">
-
-  <h5>Today's date: </h5> <p id="dateID"></p>
-
+    <!-- input and submit  -->
     <div class="input">
         <input type= "text" class="inputValue" placeholder="Enter a city">
         <input type= "submit" class="button" value="Submit">
     </div>
-
 </div>
 
-<!-- bootstrap input and search  -->
-<nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" id="inputValue" placeholder="Enter a city" aria-label="City">
-    <button class="btn btn-outline-success my-2 my-sm-0" id="button" type="submit">Submit</button>
-  </form>
-</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+              <!-- fetch values - CURRENT -->
+              <h3>Current Conditions</h3>
+              <br>              
+              <h5>City Name</h5>    <p class="nameID">Name</p> 
+              <h5>Description</h5>    <p class="descID">Description</p>
+              <h5>Temperature</h5>    <p class="tempID">Temp</p>
+              <h5></h5>    <img class="iconID">
+              <h5>Humidity</h5>   <p class="humidityID">Humidity</p>
+              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p>
+              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->      
+    </div>
 
-  <div class="container-fluid">
-      <h5>City Name</h5>    <p class="nameID">Name</p> 
-      <h5>Description</h5>    <p class="descID">Description</p>
-      <h5>Temperature</h5>    <p class="tempID">Temp</p> <h5>Farenheit</h5> 
-      <h5></h5>    <img class="iconID">
-      <h5>Humidity</h5>   <p class="humidityID">Humidity</p> <h5>%</h5>
-      <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p>
-      <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
+    <div class="col-2">
+              <!-- FORECAST 5 days -->
+              <h5>Forecasted Conditions</h5>
+              <h5>City Name</h5>    <p class="nameID">Name</p> 
+              <h5>Description</h5>    <p class="descID">Description</p>
+              <h5>Temperature</h5>    <p class="tempID">Temp</p> 
+              <h5></h5>    <img class="iconID">
+              <h5>Humidity</h5>   <p class="humidityID">Humidity</p> 
+              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p> 
+              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
+    </div>
+
+    <div class="col-2">
+              <!-- FORECAST 5 days -->
+              <h5>Forecasted Conditions</h5>
+              
+              <h5>City Name</h5>    <p class="nameID">Name</p> 
+              <h5>Description</h5>    <p class="descID">Description</p>
+              <h5>Temperature</h5>    <p class="tempID">Temp</p> 
+              <h5></h5>    <img class="iconID">
+              <h5>Humidity</h5>   <p class="humidityID">Humidity</p> 
+              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p> 
+              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
+    </div>
+
+    <div class="col-2">
+              <!-- FORECAST 5 days -->
+              <h5>Forecasted Conditions</h5>
+                
+              <h5>City Name</h5>    <p class="nameID">Name</p> 
+              <h5>Description</h5>    <p class="descID">Description</p>
+              <h5>Temperature</h5>    <p class="tempID">Temp</p> 
+              <h5></h5>    <img class="iconID">
+              <h5>Humidity</h5>   <p class="humidityID">Humidity</p> 
+              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p> 
+              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
+    </div>
+
+    <div class="col-2">
+              <!-- FORECAST 5 days -->
+              <h5>Forecasted Conditions</h5>
+               
+              <h5>City Name</h5>    <p class="nameID">Name</p> 
+              <h5>Description</h5>    <p class="descID">Description</p>
+              <h5>Temperature</h5>    <p class="tempID">Temp</p> 
+              <h5></h5>    <img class="iconID">
+              <h5>Humidity</h5>   <p class="humidityID">Humidity</p> 
+              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p> 
+              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
+    </div>
+
+    <div class="col-2">
+              <!-- FORECAST 5 days -->
+              <h5>Forecasted Conditions</h5>
+                 <!-- date  -->
+                 
+              <h5>City Name</h5>    <p class="nameID">Name</p> 
+              <h5>Description</h5>    <p class="descID">Description</p>
+              <h5>Temperature</h5>    <p class="tempID">Temp</p> 
+              <h5></h5>    <img class="iconID">
+              <h5>Humidity</h5>   <p class="humidityID">Humidity</p> 
+              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p>
+              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
+    </div>
+    
   </div>
+</div>
+
+
+  
 
 <!-- footer  -->
 <footer>
   <div>
-    <h5>This site connects to the OpenWeatherMap.org API located here https://api.openweathermap.org</h5>
+    <p>This site connects to the OpenWeatherMap.org API located here https://api.openweathermap.org<p>
     <p>&copy; 2020 Weather by City </p>
   </div>
 </footer>
