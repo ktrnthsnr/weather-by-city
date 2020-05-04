@@ -1,4 +1,37 @@
 
+/*
+var forecasting = function(){
+    //fetch JSON data -- forecasting
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + inputValue.value + '&units=imperial&APPID=' + apiKey + "&cnt=5")
+    .then(response => response.json())
+    .then(data => {
+            //JSON data parameters
+            var nameValueF = data.city.name;              //data['name'];
+            var tempValueF = Math.floor(data.main.temp); //var tempValue = data['main']['temp'];
+            var descValueF = data.weather[0].main;   //data['weather'][0]['main'];
+            var iconValueF = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png"; //data['weather'][0]['icon'];
+            var humidityValueF = data.main.humidity;
+            var windValueF = Math.floor(data.wind.speed);
+            var forecastDateValueF = data.list[0].dt_txt;
+            // var uvIndexValue = data.weather[0].main;   
+            
+            //HTML ID associating to the JSON values
+            nameH.innerHTML = nameValueF;
+            tempH.innerHTML = tempValueF + "°F";
+            descH.innerHTML = descValueF;
+            iconH.setAttribute("src", iconValueF);
+            humidityH.innerHTML = humidityValueF + "%";
+            windH.innerHTML = windValueF + " miles per hour";
+            forecastDateF.inneerHTML = "Date: " + forecastDateValueF;
+            // uvIndexH.innerHTML = uvIndexValue;
+    })
+    .catch(err => alert("Incorrect city name, please try again.  Or only provide the city, not state."))
+})
+
+*/
+
+
+
 // var data = "";
 // var temp = Math.floor(data.main.temp);
 // var icon = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";

@@ -29,7 +29,9 @@
     <!-- input and submit  -->
     <div class="input">
         <input type= "text" class="inputValue" placeholder="Enter a city">
-        <input type= "submit" class="button" value="Submit">
+        <!-- <input type="submit" class="button" value="Submit"> -->
+             <!-- onclick call both current and forecast functions  -->
+             <input type="submit" class="button" value="Submit" onclick="click(); forecast(); forecastTwo();"/>
     </div>
 </div>
 
@@ -38,80 +40,68 @@
     <div class="col-2">
               <!-- fetch values - CURRENT -->
               <h3>Current Conditions</h3>
-              <br>              
-              <h5>City Name</h5>    <p class="nameID">Name</p> 
-              <h5>Description</h5>    <p class="descID">Description</p>
-              <h5>Temperature</h5>    <p class="tempID">Temp</p>
-              <h5></h5>    <img class="iconID">
-              <h5>Humidity</h5>   <p class="humidityID">Humidity</p>
-              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p>
-              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->      
-    </div>
-
-    <div class="col-2">
-              <!-- FORECAST 5 days -->
-              <h5>Forecasted Conditions</h5>
-              <h5>City Name</h5>    <p class="nameID">Name</p> 
-              <h5>Description</h5>    <p class="descID">Description</p>
-              <h5>Temperature</h5>    <p class="tempID">Temp</p> 
-              <h5></h5>    <img class="iconID">
-              <h5>Humidity</h5>   <p class="humidityID">Humidity</p> 
-              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p> 
+              <img class="iconID">
+              <br> 
+              <!-- <h5>City Name</h5>     -->
+              <p>City:  <span class="nameID"> </span></p> 
+              <p>Desc:  <span class="descID"> </span></p> 
+              <!-- <h5>Description</h5>    <p class="descID">Description</p> -->
+              <p>Temp:  <span class="tempID"> </span></p> 
+              <!-- <h5>Temp:</h5>    <p class="tempID">Temp</p>              -->
+              <!-- <h5>Humidity</h5>   <p class="humidityID">Humidity</p> -->
+              <p>Humidity:  <span class="humidityID"> </span></p> 
+              <!-- <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p> -->
+              <p>Wind Speed:  <span class="windID"> </span></p> 
               <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
     </div>
 
     <div class="col-2">
-              <!-- FORECAST 5 days -->
-              <h5>Forecasted Conditions</h5>
-              
-              <h5>City Name</h5>    <p class="nameID">Name</p> 
-              <h5>Description</h5>    <p class="descID">Description</p>
-              <h5>Temperature</h5>    <p class="tempID">Temp</p> 
-              <h5></h5>    <img class="iconID">
-              <h5>Humidity</h5>   <p class="humidityID">Humidity</p> 
-              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p> 
-              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
-    </div>
+            <!-- FORECAST 1st day -->
+            <h3>5 Day Forecast</h3>
+            <img class="iconIDF">
+            <!-- <p>Date:  <span class="forecastDateIDF"> </span></p>  -->
+            <!-- <h5>Date</h5>    <p class="forecastDateIDF">Date</p> -->
+            <!-- <h5>Temp:</h5>    <p class="tempIDF">Temp</p>             -->
+            <p>Temp:  <span class="tempIDF"> </span></p>    
+            <!-- <h5>Humidity</h5>   <p class="humidityIDF">Humidity</p>      -->
+            <p>Humidity:  <span class="humidityIDF"> </span></p>     
+    </div>    
 
     <div class="col-2">
-              <!-- FORECAST 5 days -->
-              <h5>Forecasted Conditions</h5>
-                
-              <h5>City Name</h5>    <p class="nameID">Name</p> 
-              <h5>Description</h5>    <p class="descID">Description</p>
-              <h5>Temperature</h5>    <p class="tempID">Temp</p> 
-              <h5></h5>    <img class="iconID">
-              <h5>Humidity</h5>   <p class="humidityID">Humidity</p> 
-              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p> 
-              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
-    </div>
+       <!-- FORECAST 2nd day -->
+       <br>
+          <!-- <p>Date:  <span class="forecastDateIDFo"> </span></p>  -->
+          <img class="iconIDFo">
+          <p>Temp:  <span class="tempIDFo"> </span></p>    
+          <p>Humidity:  <span class="humidityIDFo"> </span></p>
+    </div>    
 
-    <div class="col-2">
-              <!-- FORECAST 5 days -->
-              <h5>Forecasted Conditions</h5>
-               
-              <h5>City Name</h5>    <p class="nameID">Name</p> 
-              <h5>Description</h5>    <p class="descID">Description</p>
-              <h5>Temperature</h5>    <p class="tempID">Temp</p> 
-              <h5></h5>    <img class="iconID">
-              <h5>Humidity</h5>   <p class="humidityID">Humidity</p> 
-              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p> 
-              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
-    </div>
+      <div class="col-2">
+          <!-- FORECAST 3d day -->
+          <br>
+          <!-- <p>Date:  <span class="forecastDateIDFor"> </span></p>  -->
+          <img class="iconIDFor">
+          <p>Temp:  <span class="tempIDFor"> </span></p>    
+          <p>Humidity:  <span class="humidityIDFor"> </span></p>     
+      </div>    
 
-    <div class="col-2">
-              <!-- FORECAST 5 days -->
-              <h5>Forecasted Conditions</h5>
-                 <!-- date  -->
-                 
-              <h5>City Name</h5>    <p class="nameID">Name</p> 
-              <h5>Description</h5>    <p class="descID">Description</p>
-              <h5>Temperature</h5>    <p class="tempID">Temp</p> 
-              <h5></h5>    <img class="iconID">
-              <h5>Humidity</h5>   <p class="humidityID">Humidity</p> 
-              <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p>
-              <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
-    </div>
+      <div class="col-2">
+          <!-- FORECAST 4th day -->
+          <br>
+          <!-- <p>Date:  <span class="forecastDateIDFore"> </span></p>  -->
+          <img class="iconIDFore">
+          <p>Temp:  <span class="tempIDFore"> </span></p>    
+          <p>Humidity:  <span class="humidityIDFpre"> </span></p>     
+      </div>    
+
+      <div class="col-2">
+        <!-- FORECAST 5th day -->
+        <br>
+        <!-- <p>Date:  <span class="forecastDateIDForec"> </span></p>  -->
+        <img class="iconIDForec">
+        <p>Temp:  <span class="tempIDForec"> </span></p>    
+        <p>Humidity:  <span class="humidityIDForec"> </span></p>     
+    </div>          
     
   </div>
 </div>
