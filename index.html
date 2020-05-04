@@ -1,31 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Note: this site connects to the OpenWeatherMap.org API, https://api.openweathermap.org -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather by City</title>
-  </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
 
-  <body>
-
-    <h1>Weather by City</h1>
-    <h3>Today's date: </h3> 
-    <!-- <p id="dateID"></p> -->
-    <p id="dateID"></p>
+  <!-- bootstrap navbar  -->
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Weather by City</span>
+  </nav>
 
 
-    <div class="weather-container">
-      <img class="iconID">
-      <p class="descriptionID"></p>
-      <p class="tempID"></p>
+<!-- bootstrap container fluid  -->
+<div class="container-fluid">
+
+  <h5>Today's date: </h5> <p id="dateID"></p>
+
+    <div class="input">
+        <input type= "text" class="inputValue" placeholder="Enter a city">
+        <input type= "submit" class="button" value="Submit">
     </div>
 
+</div>
 
+<!-- bootstrap input and search  -->
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" id="inputValue" placeholder="Enter a city" aria-label="City">
+    <button class="btn btn-outline-success my-2 my-sm-0" id="button" type="submit">Submit</button>
+  </form>
+</nav>
 
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+  <div class="container-fluid">
+      <h5>City Name</h5>    <p class="nameID">Name</p> 
+      <h5>Description</h5>    <p class="descID">Description</p>
+      <h5>Temperature</h5>    <p class="tempID">Temp</p> <h5>Farenheit</h5> 
+      <h5></h5>    <img class="iconID">
+      <h5>Humidity</h5>   <p class="humidityID">Humidity</p> <h5>%</h5>
+      <h5>Wind Speed</h5>    <p class="windID">Wind Speed</p>
+      <!-- <h5>UV Index</h5>    <p class="uvIndexID">UV Index</p>  -->
+  </div>
 
-  </body>
+<!-- footer  -->
+<footer>
+  <div>
+    <h5>This site connects to the OpenWeatherMap.org API located here https://api.openweathermap.org</h5>
+    <p>&copy; 2020 Weather by City </p>
+  </div>
+</footer>
+ 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>       -->
+<script src="./assets/js/script.js"></script>
+
+</body>
 </html>

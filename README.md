@@ -1,13 +1,14 @@
 ﻿# Weather by City
 
 ## Description
-Weather dashboard searching by city
+Weather dashboard by city
 
 ## Built With
 * API
 * JavaScript
 * HTML
 * CSS
+* getbootstrap.com
 
 ## Site and Repo location
 
@@ -16,6 +17,9 @@ https://ktrnthsnr.github.io/weather-by-city
 
 * GitHub file repo
 https://github.com/ktrnthsnr/weather-by-city
+
+* API
+This site connects to the OpenWeatherMap API https://api.openweathermap.org 
 
 
 ## Contribution
