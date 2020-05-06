@@ -111,10 +111,10 @@ var forecastTwo = function(){
 }
 
 // day 3
-var tempHFor = document.querySelector('.tempIDFor');
-var iconHFor = document.querySelector('.iconIDFor');
-var humidityHFor = document.querySelector('.humidityIDFor');
-var forecastDateFor = document.querySelector('.forecastDateIDFor');    
+    var tempHFor = document.querySelector('.tempIDFor');
+    var iconHFor = document.querySelector('.iconIDFor');
+    var humidityHFor = document.querySelector('.humidityIDFor');
+    var forecastDateFor = document.querySelector('.forecastDateIDFor');   
 
 var forecastThree = function(){
 //fetch JSON data
@@ -135,10 +135,10 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + inputValue.value +
 }
 
 // day 4
-var tempHFore = document.querySelector('.tempIDFore');
-var iconHFore = document.querySelector('.iconIDFore');
-var humidityHFore = document.querySelector('.humidityIDFore');
-var forecastDateFore = document.querySelector('.forecastDateIDFore');    
+    var tempHFore = document.querySelector('.tempIDFore');
+    var iconHFore = document.querySelector('.iconIDFore');
+    var humidityHFore = document.querySelector('.humidityIDFore');
+    var forecastDateFore = document.querySelector('.forecastDateIDFore');    
 
 var forecastFour = function(){
 //fetch JSON data
@@ -159,10 +159,10 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + inputValue.value +
 }
 
 // day 5
-var tempHForec = document.querySelector('.tempIDForec');
-var iconHForec = document.querySelector('.iconIDForec');
-var humidityHForec = document.querySelector('.humidityIDForec');
-var forecastDateForec = document.querySelector('.forecastDateIDForec');
+    var tempHForec = document.querySelector('.tempIDForec');
+    var iconHForec = document.querySelector('.iconIDForec');
+    var humidityHForec = document.querySelector('.humidityIDForec');
+    var forecastDateForec = document.querySelector('.forecastDateIDForec');
 
 var forecastFive = function(){
     //fetch JSON data
@@ -186,9 +186,9 @@ var forecastFive = function(){
 
 //* ------------------------------- UV index --------------------------- //
 
-var long = document.querySelector('.longitudeID');
-var lati = document.querySelector('.latitudeID');
-var uvI = document.querySelector('.uvIndexID');
+    var long = document.querySelector('.longitudeID');
+    var lati = document.querySelector('.latitudeID');
+    var uvI = document.querySelector('.uvIndexID');
 
 var uvIndex = function(){
 //fetch JSON data
@@ -228,10 +228,10 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + inputValue.value +
 
 // * ----------------------- additional items to add ----------------------- //
 
-// format date
-// add local Storage & search history
-// add UV index & color
-// add search by city & state, include country
-// add option for Celcius or Fahrenheit
-// include min | max
+                            // format date
+                            // add local Storage & search history
+                            // add UV index & color
+                            // add search by city & state, include country
+                            // add option for Celcius or Fahrenheit
+                            // include min | max
 
