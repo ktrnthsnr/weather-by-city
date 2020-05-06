@@ -8,7 +8,7 @@ Weather dashboard by city
 * JavaScript
 * HTML
 * CSS
-* getbootstrap.com
+* stackpath.bootstrapcdn.com
 
 ## Site and Repo location
 
@@ -29,4 +29,4 @@ ktrnthsnr
 
 ## Screenshot of the site
 
-![Mockup](./assets/img/weather-by-city.JPG "Weather by City")
+![Mockup](assets\img\weather-by-city.jpg "Weather by City")

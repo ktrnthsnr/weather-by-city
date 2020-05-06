@@ -1,7 +1,7 @@
 
 //   ----------------------- date ----------------------------------- //
 
-// today's date in nav bar
+                        // today's date in nav bar
 
         // * month 
         var month = new Date();
