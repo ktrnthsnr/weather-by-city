@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(16, 16, 32);
+    background-color: rgb(23, 23, 139);
 }
 
 ul {
@@ -63,31 +63,43 @@ input[type="submit"] {
     border-radius: 10px;
 }
 
-.container-fluid {
-    text-align: left;
+.container {
+    text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
+    color: black;
     font-weight: bold;
+    background-color: white;
 }
 
-.container {
+.container-fluid {
     text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 10px;
     color: white;
     font-weight: bold;
-    padding: 5px;
-    float: left;
+    padding: 10px;
+    margin: 10px;
+    float: center;
 }
-.row .col-2 {
-    /* background-color: rgb(203, 228, 243); */
+/* .row  */
+.col-2 {
     background-color: rgb(35, 80, 204);
     border-right-color: black;
-    margin:2px;
-    width:50px;
-    border-radius: 10px;
-    padding-top: 10px;
+    margin: 2px;
+    width: 5px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+h2 {
+    color: black;
+    font-size: 15px;
+    font-style: bold;
+}
+
 
 h3{
     font-size: 10px;
@@ -99,10 +111,6 @@ h4 {
     font-size: 10px;
 }
 
-h5 {
-    color: grey;
-    font-size: 10px;
-}
 
 
 footer {
@@ -112,7 +120,7 @@ footer {
     color: black;
     font-weight: lighter;
     font-family: sans-serif;
-    padding: 400px 35px;
+    padding: 50px 35px;
     font-size: 20px;
   }
 

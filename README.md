@@ -29,4 +29,4 @@ ktrnthsnr
 
 ## Screenshot of the site
 
-![Mockup](./assets/images/weather-by-city.JPG "Weather by City")
+![Mockup](./assets/img/weather-by-city.JPG "Weather by City")
