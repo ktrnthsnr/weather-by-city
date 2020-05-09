@@ -23,6 +23,7 @@ ul {
     font-size: 15px;
     color: white;
     padding-top: 10px;
+    padding-right: 10px;
 }
 
 li {
@@ -178,8 +179,19 @@ footer {
   .card {
     box-shadow: 0 4px 8px 0;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
     background-color: rgb(35, 80, 204);
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+  }
+
+  /* responsive image  */
+  img {
+    width: 50%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 0px;
   }
