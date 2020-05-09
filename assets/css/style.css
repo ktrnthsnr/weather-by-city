@@ -63,12 +63,15 @@ input[type="submit"] {
 /* fetched weather data  */
 
 .container {
-    text-align: center;
+    text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
-    color: black;
+    font-size: 10px;
+    color: white;
     font-weight: bold;
-    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    /* float: left; */
+    /* width: 100%; */
 }
 
 .container-fluid {
@@ -79,7 +82,8 @@ input[type="submit"] {
     font-weight: bold;
     padding: 10px;
     margin: 10px;
-    float: center;
+    /* float: left; */
+    /* width: 100%; */
 }
 
 .col-2 {
@@ -91,7 +95,31 @@ input[type="submit"] {
     padding-top: 15px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
+    width: 100%;
 }
+
+/* .container {
+    max-width:100%;
+    width: 100%;
+} */
+
+
+/* @media screen and (max-width: 600px) {
+    .col-2 {
+      float: none;
+      width: 100%;
+    }
+  } */
+
+  /* Responsive .col-2 */
+@media screen and (max-width: 600px) {
+    .col-2 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
 
 h2 {
     color: black;
@@ -109,20 +137,19 @@ h4 {
     font-size: 10px;
 }
 
+ /* footer  */
+
 footer {
     background: white;
-    font-size: 10px;
-    width: 100%;
     color: black;
     font-weight: lighter;
     font-family: sans-serif;
     padding: 50px 35px;
     font-size: 20px;
+    float: right;
+    height: 10%;
+    width: 100%;
   }
-
-
-  /* footer  */
-
 
   footer h5 {
       font-size: 10x;
@@ -131,3 +158,4 @@ footer {
   footer p {
     font-size: 10px;
 }
+
