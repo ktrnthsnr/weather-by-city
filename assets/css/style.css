@@ -73,7 +73,7 @@ input[type="submit"] {
     /* float: left; */
     /* width: 100%; */
 }
-
+/* 
 .container-fluid {
     text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -84,7 +84,7 @@ input[type="submit"] {
     margin: 10px;
     /* float: left; */
     /* width: 100%; */
-}
+} */
 
 .col-2 {
     background-color: rgb(35, 80, 204);
@@ -98,19 +98,6 @@ input[type="submit"] {
     padding-bottom: 20px;
     width: 100%;
 }
-
-/* .container {
-    max-width:100%;
-    width: 100%;
-} */
-
-
-/* @media screen and (max-width: 600px) {
-    .col-2 {
-      float: none;
-      width: 100%;
-    }
-  } */
 
   /* Responsive .col-2 */
 @media screen and (max-width: 600px) {
@@ -159,3 +146,40 @@ footer {
     font-size: 10px;
 }
 
+/* ----------------------- updated to floating cards to be mobile responsive --------------------- */
+
+/* float 5 columns  */
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+/* removes float  */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* responsive for smaller devices  */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+/* cards  */
+  .card {
+    box-shadow: 0 4px 8px 0;
+    color: white;
+    background-color: rgb(35, 80, 204);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
